@@ -27,4 +27,4 @@ Commercial drones pose security and privacy risks to critical locations. Traditi
    pip install -r requirements.txt
 
 3. Run detection on a video file:
-   python detect.py --source sample_video.mp4 --weights weights/uav_model.pt
+   python detect.py --source sample_video.mp4 --weights YOLO_weights/uav_model.pt
