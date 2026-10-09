@@ -12,16 +12,16 @@
 # C:\Users\91997\OneDrive - Niltech\Documents - Niltech Shared Site ML\Projects Ongoing\Rabiya Ongoing\Tree counting using YOLO
 # C:/Users/91997/OneDrive - Niltech/Shared Drive-Niltech/Ongoing Projects/Rabiya Ongoing/fish detection yolov8/deep fish
 
-path: "C:/Users/91997/OneDrive - Niltech/Documents - Niltech Shared Site ML/Projects Ongoing/Rabiya Ongoing/YOLOTripleRiding_HelmetViolations/Helmet Dataset(Improved)"  # dataset root dir
+path: "C:/Users/91997/OneDrive - Niltech/Documents - Niltech Shared Site ML/Projects Ongoing/Rabiya Ongoing/uav-detection-yolo/Drone Dataset"  # dataset root dir
 train: images/train  # train images (relative to 'path') 128 images
 val: images/train # val images (relative to 'path') 128 images
 # test: test/images # test images (optional)
 
 # Classes
 names:
-  0: Vehicle_person
-  1: Helmet
-  2: No_helmet
+  0: drone
+  1: aeroplane
+  2: bird
 
 
 
