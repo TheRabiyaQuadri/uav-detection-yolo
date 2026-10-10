@@ -36,18 +36,24 @@ Commercial drones pose security and privacy risks to critical locations. Traditi
 
 ## 🚀 Model Training & Fine-Tuning
 
-To support full research reproducibility, this repository includes the custom training script (`train.py`) and dataset configuration (`configs/uav.yaml`). 
+To support full research reproducibility, this repository includes the interactive training notebook (`train.ipynb`) and dataset configurations. 
 
-To train or fine-tune the architecture on custom aerial datasets with optimized hyperparameters for small-target detection:
+You can execute the training pipeline directly via Jupyter or run it programmatically using the Ultralytics framework:
 
-```bash
-python train.py \
-  --img 640 \
-  --batch 16 \
-  --epochs 100 \
-  --data configs/uav.yaml \
-  --weights weights/uav_model.pt \
-  --cache
+```python
+from ultralytics import YOLO
+
+# Load pre-trained medium model weights
+model = YOLO('yolov8m.pt')
+
+# Execute custom training pipeline for small-object aerial detection
+results = model.train(
+    data='custom_data.yaml',
+    imgsz=640,
+    epochs=250,
+    batch=8,
+    name='DroneDetection-YOLOV8'
+)
 
 ```
 
