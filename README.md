@@ -34,6 +34,23 @@ Commercial drones pose security and privacy risks to critical locations. Traditi
 
 ---
 
+## 🚀 Model Training & Fine-Tuning
+
+To support full research reproducibility, this repository includes the custom training script (`train.py`) and dataset configuration (`configs/uav.yaml`). 
+
+To train or fine-tune the architecture on custom aerial datasets with optimized hyperparameters for small-target detection:
+
+```bash
+python train.py \
+  --img 640 \
+  --batch 16 \
+  --epochs 100 \
+  --data configs/uav.yaml \
+  --weights weights/uav_model.pt \
+  --cache
+
+```
+
 ## 🛠️ Engineering Execution
 To run inference with custom weight loading and tensor validation:
 ```bash
