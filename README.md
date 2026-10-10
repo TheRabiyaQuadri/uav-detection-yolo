@@ -57,6 +57,16 @@ results = model.train(
 
 ```
 
+## 📦 Model Weights & Checkpoints
+
+Download the fine-tuned model weights directly from the [v1.0.0 Release Page](https://github.com/TheRabiyaQuadri/uav-detection-yolo/releases/tag/v1.0.0):
+
+| Model Variant | Input Size | mAP@0.5 | Download Link |
+| :--- | :---: | :---: | :---: |
+| **YOLOv8m-UAV** | $640 \times 640$ | 92.0% | [Download `.pt` Weights](https://github.com/TheRabiyaQuadri/uav-detection-yolo/releases/download/v1.0.0/uav_model.pt) |
+
+Place the downloaded `.pt` file into a `weights/` directory before executing `detect.py`.
+
 ## 🛠️ Engineering Execution
 To run inference with custom weight loading and tensor validation:
 ```bash
