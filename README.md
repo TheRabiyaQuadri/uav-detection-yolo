@@ -2,6 +2,8 @@
 
 An AI-powered computer vision system designed to detect and track small unmanned aerial vehicles (drones) in real-time using optical camera feeds and state-of-the-art YOLO object detection.
 
+![UAV Real-Time Detection Demo](assets/output_test.gif)
+
 ## Problem Overview
 
 Commercial drones pose security and privacy risks to critical locations. Traditional detection methods have major limitations:
